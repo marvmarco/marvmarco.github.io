@@ -5,5 +5,5 @@ document.getEventListener("DOMContentLoaded", ()=>{
     var cv_iframe = getElementById("cviframe")
     cv_iframe.href = url
     var cv_link = getElementById("cvlink")
-    cv_link.href = url
+    cv_link.href = cv_path
 })

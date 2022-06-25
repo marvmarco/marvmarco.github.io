@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     
     // header
     header = document.createElement("h1")
-    header.innerHTML = "Marco C"
+    header.appendChild(document.createTextNode("Marco C"))
     body.appendChild(header)
 
     // paragraph

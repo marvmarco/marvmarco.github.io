@@ -5,17 +5,24 @@ document.addEventListener("DOMContentLoaded", ()=>{
     url_gv_cv = google_viewer + cv_url //  + "&embedded=true"
 
     body = document.body
-      
+    
+    cvBar = document.createElement("div")
+    cvBar.className = "cvBar"
+    
     viewCVelem = document.createElement("a")
     viewCVelem.href = url_gv_cv
     viewCVelem.innerHTML = "View CV"
 
-    body.appendChild(viewCVelem)
+    cvBar.appendChild(viewCVelem)
+
+    cvBar.appendChild(document.createElement("p").appendChild(document.createTextNode(" ")))
 
     downloadCVelem = document.createElement("a")
     downloadCVelem.href = cv_url
     downloadCVelem.innerHTML = "Download CV"
     
-    body.appendChild(downloadCVelem)
+    cvBar.appendChild(downloadCVelem)
+
+    body.appendChild(cvBar)
 
 })

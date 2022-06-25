@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     cvBar.appendChild(viewCVelem)
 
+    // little space between CV links
     cvBar.appendChild(document.createElement("p").appendChild(document.createTextNode(" ")))
 
     downloadCVelem = document.createElement("a")

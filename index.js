@@ -1,10 +1,22 @@
 document.addEventListener("DOMContentLoaded", ()=>{
+    body = document.body
+    
+    // header
+    header = document.createElement("h1")
+    header.innerHTML = "Marco C"
+    body.appendChild(header)
+
+    // paragraph
+    desc = document.createElement("p")
+    desc.innerHTML = "Student of computer engineering at the university of Rome"
+    body.appendChild(desc)
+
+    // CV CONSTANTS
     cv_url = "https://github.com/marvmarco/marvmarco.github.io/raw/master/cv.pdf"
     google_viewer = "https://docs.google.com/viewerng/viewer?url="
     // URL FOR GOOGLE VIEWER WITH CV
     url_gv_cv = google_viewer + cv_url //  + "&embedded=true"
 
-    body = document.body
     
     cvBar = document.createElement("div")
     cvBar.className = "cvBar"
